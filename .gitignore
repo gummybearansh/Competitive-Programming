@@ -1,0 +1,12 @@
+# Ignore everything by default
+*
+
+# Unignore the folders
+!*/
+
+#  unignore the c++ files
+!*.cpp
+
+# Allow .gitignore file itself
+!.gitignore
+
