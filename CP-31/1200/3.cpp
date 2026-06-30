@@ -7,6 +7,7 @@ using namespace std;
 
 ll sumTill(ll x) { return (x * (x + 1)) / 2; }
 
+int x = MAX_INT;
 void solve() {
   ll n, x, y;
   cin >> n >> x >> y;
@@ -63,7 +64,7 @@ int main() {
   int t;
   cin >> t;
   while (t--) {
-    solve();
+    solveTLE();
   }
   return 0;
 }
