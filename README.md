@@ -1,14 +1,17 @@
-# ⚔️ Competitive Programming & DSA Archive
-
-[![C++](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B)](https://cplusplus.com/)
-[![Problems Solved](https://img.shields.io/badge/Problems%20Solved-<!--%20COUNT_START%20-->0<!--%20COUNT_END%20-->-282a36?style=for-the-badge&logo=codeforces)](#)
+<div align="center">
+  <h1>⚔️ Competitive Programming & DSA Archive</h1>
+  <p>
+    <a href="https://cplusplus.com/"><img src="https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++" /></a>
+    <img src="https://img.shields.io/badge/Problems%20Solved-269-282a36?style=for-the-badge&logo=codeforces" alt="Problems Solved" />
+  </p>
+</div>
 
 A centralized, unified repository tracking my competitive programming journey, algorithmic problem-solving, and continuous upskilling. This archive merges my work across the **Striver A2Z** sheet, **CP-31**, **Codeforces**, and **LeetCode**.
 
 ## 📊 Overview
 
 > **🔥 Dynamic Problem Count:** Currently tracking **<!-- COUNT_START -->269<!-- COUNT_END -->** solved problems.
-> *(This counter is automatically updated via a custom Git `pre-commit` hook that scans for valid `.cpp` files upon every commit).*
+> _(This counter is automatically updated via a custom Git `pre-commit` hook that scans for valid `.cpp` files upon every commit)._
 
 - **Primary Language:** C++ (Standard Template Library)
 - **Focus Areas:** Data Structures, Algorithms, Mathematics, and competitive problem-solving patterns.
@@ -43,4 +46,5 @@ g++ -O3 -std=c++17 <filename>.cpp -o output
 ```
 
 ---
-*Maintained by [Ansh Lachhwani](https://github.com/gummybearansh).*
+
+_Maintained by [Ansh Lachhwani](https://github.com/gummybearansh)._
