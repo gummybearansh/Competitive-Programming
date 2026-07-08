@@ -37,7 +37,8 @@ Node *deleteFromHead(Node *head) { // O(1)
 // 2. Delete the tail of the LL (last node)
 Node *deleteTail(Node *head) { // O(N)
   // make sure LL has atleast 2 elements (if 1 - even deleting that would be NULL)
-  if (head == NULL || head -> next == nullptr) return NULL;
+  if (head == NULL || head->next == nullptr)
+    return NULL;
 
   Node *it = head;
   // keep moving it over the LL
@@ -53,16 +54,16 @@ Node *deleteTail(Node *head) { // O(N)
   return head;
 }
 
-// 3. Delete a node from the LL 
-// you're given just a node from the LL 
-// you need to delete this node - no access to other previous elements 
-Node *deleteNode(Node* node){
-  // make this node's value the next node's value 
+// 3. Delete a node from the LL
+// you're given just a node from the LL
+// you need to delete this node - no access to other previous elements
+void *deleteNode(Node *node) {
+  // make this node's value the next node's value
   // make this node skip the next node
   // delete the next node
-  Node* nextNode = node -> next;
-  node -> val = nextNode -> val;
-  node -
+  Node *nextNode = node->next;
+  node->data = nextNode->data;
+  node->next = nextNode->next;
 }
 
 // convert array to LL
