@@ -1,35 +1,44 @@
 #include <bits/stdc++.h>
-using namespace std;
+
 #define ll long long
-ll lcm(ll a, ll b) {
-  ll g = __gcd(a, b);
-  return (a * b / g);
-}
+#define dbg(v) cout << "Line(" << __LINE__ << ") -> " << #v << " = " << (v) << endl;
+
+using namespace std;
+
 void solve() {
-  ll n;
+  int n;
   cin >> n;
-  vector<ll> a(n + 2, 1);
-  for (ll i = 1; i <= n; i++) {
-    cin >> a[i];
-  }
-  vector<ll> b(n + 2, 1);
-  for (ll i = 1; i <= n + 1; i++) {
+  vector<int> a(n);
+  for (auto &i : a)
+    cin >> i;
+
+  // basically construct b (n+1)
+  // b[0] = a[0]
+  // b[n] = a[n-1]
+  // and confirm if gcd(b[i], b[i+1]) == a[i]
+  vector<int> b(n + 1);
+  b[0] = a[0], b[n] = a[n - 1];
+  for (int i = 1; i < n; i++) {
     b[i] = lcm(a[i], a[i - 1]);
   }
-  for (ll i = 1; i <= n; i++) {
-    if (__gcd(b[i], b[i + 1]) != a[i]) {
+
+  // now confirm
+  for (int i = 0; i < n; i++) {
+    if (a[i] != gcd(b[i], b[i + 1])) {
       cout << "NO\n";
       return;
     }
   }
   cout << "YES\n";
 }
+
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  ll t;
+  int t;
   cin >> t;
   while (t--) {
     solve();
   }
+  return 0;
 }

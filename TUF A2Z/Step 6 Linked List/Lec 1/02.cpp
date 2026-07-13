@@ -57,7 +57,7 @@ Node *deleteTail(Node *head) { // O(N)
 // 3. Delete a node from the LL
 // you're given just a node from the LL
 // you need to delete this node - no access to other previous elements
-void *deleteNode(Node *node) {
+void deleteNode(Node *node) {
   // make this node's value the next node's value
   // make this node skip the next node
   // delete the next node
