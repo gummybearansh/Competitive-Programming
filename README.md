@@ -2,7 +2,7 @@
   <h1>⚔️ Competitive Programming & DSA Archive</h1>
   <p>
     <a href="https://cplusplus.com/"><img src="https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B" alt="C++" /></a>
-    <img src="https://img.shields.io/badge/Problems%20Solved-312-282a36?style=for-the-badge&logo=codeforces" alt="Problems Solved" />
+    <img src="https://img.shields.io/badge/Problems%20Solved-313-282a36?style=for-the-badge&logo=codeforces" alt="Problems Solved" />
   </p>
 </div>
 
@@ -10,7 +10,7 @@ A centralized, unified repository tracking my competitive programming journey, a
 
 ## 📊 Overview
 
-> **🔥 Dynamic Problem Count:** Currently tracking **<!-- COUNT_START -->312<!-- COUNT_END -->** solved problems.
+> **🔥 Dynamic Problem Count:** Currently tracking **<!-- COUNT_START -->313<!-- COUNT_END -->** solved problems.
 > _(This counter is automatically updated via a custom Git `pre-commit` hook that scans for valid `.cpp` files upon every commit)._
 
 - **Primary Language:** C++ (Standard Template Library)
